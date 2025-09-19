@@ -21,3 +21,13 @@ curl -X POST \
   -d "client_id=415dmo02sq91e5c89guoc71kcp" \
   -d "code=471d2cf2-787d-451b-aff6-99816cb9e73c" \
   -d "redirect_uri=https://d841u8p4klic.cloudfront.net"
+
+
+curl -X POST \
+  https://us-east-1t2dsacktq.auth.us-east-1.amazoncognito.com/oauth2/token \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=authorization_code" \
+  -d "client_id=415dmo02sq91e5c89guoc71kcp" \
+  -d "client_secret=YOUR_CLIENT_SECRET" \
+  -d "code=471d2cf2-787d-451b-aff6-99816cb9e73c" \
+  -d "redirect_uri=https://d841u8p4klic.cloudfront.net"
